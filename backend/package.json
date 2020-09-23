@@ -1,0 +1,25 @@
+{
+  "name": "social-network",
+  "version": "1.0.0",
+  "description": "a Sample Social Network Site which has all the basic requirements.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Innovate-World/Social-Network.git"
+  },
+  "keywords": [
+    "Social",
+    "Network",
+    "Nodejs",
+    "ReactJs"
+  ],
+  "author": "MVSP, VR",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Innovate-World/Social-Network/issues"
+  },
+  "homepage": "https://github.com/Innovate-World/Social-Network#readme"
+}
