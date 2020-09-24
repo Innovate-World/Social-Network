@@ -23,7 +23,8 @@ const login = require('./routes/login');
 // Here we provide the total entire endpoints available for the client.
 app.use('/',mainpage);
 app.use('/signup', signUp);
-app.use('/login', login)
+app.use('/login', login);
+
 
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);
