@@ -48,9 +48,14 @@
 					$user = array(
 						"userName" => $data->userName,
 						"userFullname" => $data->userFullname,
+						"userEmail" => $data->userEmail,
 						"userPassword" => $data->userPassword,
+						"userPhone" => $data->userPhone,
 						"userAge" => $data->userAge,
 						"userGender" => $data->userGender,
+						"profilePic" => $data->profilePic,
+						"userBio" => $data->userBio,
+						"Country" => $data->Country,
 						"userIP" => $data->userIP,
 						"userCreatedDate" => date("d-m-Y H:i:s")
 					);

@@ -29,17 +29,22 @@
 		$userPassword = password_hash($user['userPassword'], PASSWORD_BCRYPT, ["cost"=>12, "salt"=>"82sdd7k239kd2;3923dkw03"]);
 
 		//To Prevent SQL Injection
-		$CreateUserQuery = "INSERT INTO users(userID, userName, userFullname, userPassword, userAge, userGender, userIP, userCreatedDate)
-							VALUES(?, ?, ?, ?, ?, ?, ?, ?)";
+		$CreateUserQuery = "INSERT INTO users(userID, userName, userFullname, userEmail, userPassword, userPhone, userAge, userGender, profilePic, userBio, Country, userIP, userCreatedDate)
+							VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
 		$stmt = $conn->prepare($CreateUserQuery);
-		$stmt->bind_param('ssssisss',
+		$stmt->bind_param('sssssiissssss',
 							$userID,
 							$user['userName'],
 							$user['userFullname'],
+							$user['userEmail'],
 							$userPassword,
+							$user['userPhone'],
 							$user['userAge'],
 							$user['userGender'],
+							$user['profilePic'],
+							$user['userBio'],
+							$user['Country'],
 							$user['userIP'],
 							$user['userCreatedDate']
 						);
